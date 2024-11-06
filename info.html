@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DESCRIPTION ABOUT EMAIL VARIFICATION</title>
+</head>
+<body>
+<h1>The first step to make a email varification is to take a user input</h1>
+<div>
+    <p>For email format validation, you can use regular expressions (regex) to check that the email meets a standard pattern. Python’s re module allows you to use regex to verify if an email address has the correct format.
+
+1. Basic Format Validation with Regex
+A standard email format pattern typically includes:
+
+Alphanumeric characters before the @ symbol.
+An @ symbol.
+A domain name with alphanumeric characters (e.g., example).
+A dot . followed by a valid top-level domain (e.g., .com, .org).</p>
+
+</div>
+<div>
+    <h1>here is the information about the re module</h1>
+    <p>The re module in Python provides support for working with regular expressions, which are patterns that help match or search for specific text sequences within strings. Regular expressions are very useful for tasks like email verification, where you need to ensure that a string follows a specific format.
+
+Basics of the re Module
+Importing re Module:
+
+python
+Copy code
+import re
+Common Functions in re Module:
+
+re.match(): Checks for a match only at the beginning of the string.
+re.search(): Searches for a match anywhere in the string.
+re.findall(): Finds all matches of the pattern in the string and returns them as a list.
+re.sub(): Replaces parts of a string that match a pattern with another string.
+re.compile(): Compiles a regex pattern into a regex object, which can be reused multiple times for matching.
+How to Use re for Email Format Validation
+To validate an email format, we use re.match() or re.search() to check if the input string matches a predefined regular expression pattern for emails.</p>
+</div>
+<h1>Steps of making the functions of the email varification</h1>
+<div >
+    <p>1.now in the code we make the first function that cheak the syntax of the email properly with re. match function .</p>
+</div>
+<div>
+    <h1>THE INFO ABOUT re.match () function</h1>
+    <p>
+        The re.match() function in Python is used for matching a pattern at the beginning of a string. If the pattern is found at the start, it returns a match object; otherwise, it returns None.
+        
+        Syntax:
+        python
+        Copy code
+        re.match(pattern, string, flags=0)
+        Parameters:
+        pattern: The regular expression pattern to search for.
+        string: The string in which to search for the pattern.
+        flags: (Optional) Flags to modify the behavior of the matching process (e.g., re.IGNORECASE, re.MULTILINE, etc.).
+        Return Value:
+        If the pattern matches at the start of the string, a match object is returned.
+        If there is no match, it returns None.
+        Match Object:
+        A match object contains information about the match, such as the starting and ending positions of the match.
+        You can use methods like group(), start(), and end() to extract details from the match object.</p>
+</div>
+
+
+</body>
+</html>
